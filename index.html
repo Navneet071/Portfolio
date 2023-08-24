@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2a21f9acd9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#myskills" onclick="closemenu()">Skills</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Works</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Resume</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fas fa-times" id="closemenu" onclick="closemenu()"></i>           <!-- Small screen close menu icon-->
+                </ul>
+                <i class="fas fa-bars" id="openmenu" onclick="openmenu()"></i>                  <!-- Small screen menu icon-->
+            </nav>
+            <div class="main-text">
+                <h1>Hi, I'm <span> Navneet </span> <br> from Lucknow</h1>
+            </div>
+            <div class="header-text">
+                <span class="text sec-text">Java Developer</span>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------    about ------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="fade-right">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2" data-aos="fade-left">
+                    <h1 class="sub-title">About Me :</h1><br>
+                        <p>Hey there! My name is Navneet Baranwal, a final year Undergraduate student (C.S.E.) from Lucknow.I was fortunate enough to know from a young age that I wanted to be an engineer. The engineering way of thinking came naturally to me. What I didn't know was what type of engineer I wanted to be. When push came to shove, I chose Software Engineering.</p> <br><br>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Projects</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills" data-aos="fade-right">
+                            <ul>
+                                <hr><li><span>--Web Development--</span><br>Developing responsive Website with all the key concepts</li><br><hr>
+                                <li><span>--Java Development--</span><br>Developing Dynamic Web Projects using Java, JSP, Servlets, MYSQL Databse Connectivity <br>Frameworks: Spring Boot, Hibernate</li><br><hr>
+
+                                <li><span>--Programming Skills--</span><br>Java, Python, C++</li><br><hr>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <hr><li><span>2020 - Current</span><br>B.Tech. (C.S.E.) SMS Lucknow</li><br><hr>
+                                <li><span>2019</span><br>Intermediate from SVM Sultanpur</li><br><hr>
+                                <li><span>2017</span><br>High-School from Sarvodaya Inter College Lambhua Sultanpur</li><br><hr>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <hr><li><span>Experience - 1</span><br>Java Full Stack Web Development (Fresher) </li><br>
+                                <hr><li><span>Experience - 2</span><br>Java, Python, C++ Coding</li><br>
+                                <hr><li><span>Experience - 3</span><br>Mysql & Django Database Connectivity</li><br><hr>
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------- Services ----------- -->
+    <div id="myskills">
+        <div class="container">
+            <h1 class="sub-title">My Skills :</h1>
+            <div class="services-list">
+                
+
+                <div data-aos="fade-up" >
+                    <img src="images/cpp.png"  alt="cpp-image">
+                </div>
+
+                <div data-aos="fade-up">
+                    <img src="images/java.png"  alt="java-image">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="images/python.png"  alt="python-image">
+                </div>
+               
+                <div data-aos="fade-up">
+                    <img src="images/html-5.png"  alt="html-image">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="images/css-3.png"  alt="css-image">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="images/js.png"  alt="js-image">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="images/mysql.png"  alt="sql-image">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="images/bootstrap.png"  alt="bootstrap-image">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="images/springboot.png"  alt="springboot-image">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="images/Hibernate.jpg"  alt="hibernate-image">
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- ----------- portfolio ----------- -->
+     <div id="portfolio" >
+        <div class="container">
+            <h1 class="sub-title">My Work :</h1>
+            <div class="work-list">
+                <div class="work" data-aos="zoom-in-down">
+                    <img src="images/work1.jpg" alt="error">
+                    <div class="layer">
+                        <h3>Raido : Travelling Site</h3>
+                        <p>A Landing Page made by me on Travelling Website that contain all the basic elements that a website must have </p>
+                        <a href="https://navneet071.github.io/Travel-Site-Landing-Page-/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-down">
+                    <img src="images/45211.jpg" alt="error">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>This is a HTML, CSS, JavaScript based Weather App that uses the weather API to show different Climatic Conditions of User entered city or location</p>
+                        <a href="https://navneet-weatherapp.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-down">
+                    <img src="images/quiz.jpg" alt="error">
+                    <div class="layer">
+                        <h3>Quiz Application</h3>
+                        <p>Desktop Based Quiz Application which is based on the Java, Swing and AWT.</p>
+                        <a href="https://github.com/Navneet071/Quiz-App-Java" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+                    <!-- SEE MORE BUTTON -->
+            <a href="https://github.com/Navneet071?tab=repositories" data-aos="zoom-out" class="button">See more</a>
+        </div>
+     </div>
+
+     <!-- ----------- contact ----------- -->
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left" data-aos="fade-down-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>navneetbaranwal071@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>+91 7071339312</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Navneet071" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/__its_navne_et__/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/navneet-baranwal-a6107b224/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/Navneet07481765?t=RCWIrR620du8mAnwab-Qfg&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/navneet.baranwal.902?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a data-aos="zoom-out-left" href="images/Navneet_Resume.pdf" download class="button btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right" data-aos="fade-down-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="EMail" placeholder="Your Email" required>
+                        <textarea name="Message"  cols="20" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="button btn2 " > Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                <div class="copyright">
+                    
+                    <p id="copy"><i class="fa-regular fa-copyright"></i>  2023 Copyright: Portfolio
+                        Developed By: <span>Navneet Baranwal</span></p>
+
+                </div>
+            </div>
+        </div>
+        
+     </div>
+
+     <script src="script.js"></script>
+
+
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({
+        offset:150,
+        duration:300
+       });
+     </script>
+</body>
+</html>
